@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>008-display</title>
+    <style>
+      p {
+        /*inline: 컨텐츠만큼의 너비만 차지*/
+        background-color: aqua;
+        width: 200px;
+        display: inline;
+      }
+
+      span {
+        /*block: 200px로 고정 한줄에 하나만 차지 (줄바꿈O)*/
+        /*none: 사라짐*/
+        background-color: plum;
+        width: 200px;
+        /* display: block; */
+        display: none;
+      }
+
+      em {
+        /*inline-block: 200px 고정 한줄에 모두 배치 / 각 하나당 200px */
+        background-color: forestgreen;
+        width: 200px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <p>p</p>
+    <p>p</p>
+    <p>p</p>
+    <p>p</p>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <em>em</em>
+    <em>em</em>
+    <em>em</em>
+    <em>em</em>
+  </body>
+</html>
