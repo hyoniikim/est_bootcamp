@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>010_text</title>
+    <style>
+      p {
+        width: 300px;
+        background-color: plum;
+        /* text-align: right; */
+        /* text-align: center; */
+        /*text-align: justify; */ /* 양쪽정렬 - 가독성떨어짐*/
+        /* text-align: start; */
+        text-align: end;
+      }
+
+      span {
+        font-size: 50px;
+        border: solid 1px black;
+        line-height: 80px;
+      }
+      .baseline {
+        vertical-align: baseline;
+      }
+      .sub {
+        vertical-align: sub;
+      }
+      .super {
+        vertical-align: super;
+      }
+      .text-top {
+        vertical-align: text-top;
+      }
+      .text-bottom {
+        vertical-align: text-bottom;
+      }
+      .middle {
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ullam
+      eligendi ex officia iusto, rem ut autem consectetur nobis illo
+      voluptatibus, nostrum magnam optio, eveniet neque quisquam ipsum ea iste.
+      Est beatae ducimus ad, culpa cum incidunt eos aut quia. Impedit soluta
+      iusto eligendi inventore nostrum, sint ea, eos quisquam consequuntur modi
+      accusamus optio enim quas placeat asperiores fugit ducimus. Debitis eum
+      quis magnam totam praesentium voluptatum porro quo ab voluptates adipisci.
+      Ullam, soluta repellat cum ducimus cumque voluptatum natus esse beatae
+      amet tenetur assumenda sunt dolore possimus repellendus numquam.
+    </p>
+    <span>
+      부모요소
+      <span class="baseline"> baseline </span> </span
+    ><br />
+    <span>
+      부모요소
+      <span class="sub"> sub </span> </span
+    ><br />
+    <span>
+      부모요소
+      <span class="super"> super </span> </span
+    ><br />
+    <span>
+      부모요소
+      <span class="text-top"> text-top </span> </span
+    ><br />
+    <span>
+      부모요소
+      <span class="text-bottom"> text-bottom </span> </span
+    ><br />
+    <span>
+      부모요소
+      <span class="middle"> middle </span> </span
+    ><br />
+  </body>
+</html>

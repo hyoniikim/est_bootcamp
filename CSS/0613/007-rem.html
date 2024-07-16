@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>007-rem</title>
+    <style>
+      html {
+        font-size: 10px;
+      }
+
+      .container {
+        font-size: 10px;
+        background-color: plum;
+      }
+
+      .container div {
+        border: 1px solid black;
+      }
+
+      .item1 {
+        /* 부모요소의 폰트사이즈: 10px
+           10px * 2 = 20px */
+        font-size: 2em;
+      }
+
+      .item2 {
+        /* root html 기본 포트사이즈: 16px
+           16px * 2 = 32px */
+        /* html 사이즈 10px로 변경했을 때
+           10px * 2 = 20px */
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- em: 부모요소로부터 상속받은 요소의 글자크기를 기준으로 하는 배수 단위 -->
+    <!-- rem: root em / 최상의 요소(html)의 글자크기를 기준으로 하는 배수 단위 (html 기본 폰트 사이즈: 16px) -->
+    <div class="container">
+      <div class="item1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+        voluptates labore consequuntur alias neque quo maiores officia totam?
+        Porro minima maiores dolorum laboriosam, earum architecto cupiditate
+        tempora dignissimos ullam accusantium!
+      </div>
+      <div class="item2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+        molestias, ipsa voluptatibus rerum incidunt mollitia earum animi
+        placeat, eveniet optio consequatur eos? Delectus, consequuntur vitae!
+        Nostrum harum molestias totam atque.
+      </div>
+    </div>
+  </body>
+</html>
