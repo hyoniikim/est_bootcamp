@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>005-background-image</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-image: url(../img/albamon.jfif);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      div::before {
+        content: "";
+        display: block;
+        background-image: url(../img/albamon.jfif);
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 문맥상 필요한 정보를 제공하지 않고 디자인적 요소일 경우 -->
+    <div></div>
+    <!-- 문맥상 필요한 정보를 제공할 때 -->
+    <img src="../img/albamon.jfif" alt="알바몬" />
+  </body>
+</html>
