@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>003-float</title>
+    <style>
+      /*float: 어떻게 정렬할 지 결정*/
+      p {
+        border: 1px solid salmon;
+      }
+
+      img {
+        float: right;
+      }
+
+      .clear {
+        float: both; /* 양쪽 다 해제시킴 */
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+      }
+
+      .box1 {
+        background-color: plum;
+        float: left;
+      }
+
+      .box2 {
+        background-color: skyblue;
+        float: left;
+      }
+
+      .box3 {
+        background-color: wheat;
+        float: left;
+      }
+
+      .container {
+        background-color: aquamarine;
+
+        /* 해제 방법1 */
+        /* height: 100px; */
+
+        /*해제 방법2 */
+        /* overflow: hidden; */
+      }
+
+      /* 해제 방법3 */
+      .clear-fix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="http://placehold.it/200x150" alt="" />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero incidunt est
+      earum. Numquam, in deserunt fugiat nemo totam repudiandae consequatur?
+      Iure, explicabo! Labore expedita maiores mollitia nam error quasi
+      assumenda quaerat, ab perferendis accusantium consequuntur aliquam sunt
+      <!-- possimus tempore omnis aut repellat optio exercitationem, deserunt
+      nesciunt facere nisi dicta. Eveniet animi assumenda facere voluptatum nemo
+      amet quaerat suscipit! Esse modi quo accusamus, voluptatibus repellendus
+      libero reiciendis minus quae commodi ab! Odit esse corrupti sed tempora ab
+      eos sequi nobis tenetur voluptatem, sapiente quia rem veritatis? -->
+    </p>
+    <p class="clear">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero incidunt est
+      earum. Numquam, in deserunt fugiat nemo totam repudiandae consequatur?
+      Iure, explicabo! Labore expedita maiores mollitia nam error quasi
+      assumenda quaerat, ab perferendis accusantium consequuntur aliquam sunt
+      possimus tempore omnis aut repellat optio exercitationem, deserunt
+      <!-- nesciunt facere nisi dicta. Eveniet animi assumenda facere voluptatum nemo
+      amet quaerat suscipit! Esse modi quo accusamus, voluptatibus repellendus
+      libero reiciendis minus quae commodi ab! Odit esse corrupti sed tempora ab
+      eos sequi nobis tenetur voluptatem, sapiente quia rem veritatis? -->
+    </p>
+    <div class="container clear-fix">
+      container
+      <div class="box box1">A</div>
+      <div class="box box2">B</div>
+      <div class="box box3">C</div>
+    </div>
+  </body>
+</html>
