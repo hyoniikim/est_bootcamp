@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>001-구조적가상선택자</title>
+    <style>
+      /*child방식 > 자손의 순번으로 결정*/
+      div.box1 > h1:nth-child(1) {
+        color: salmon;
+      }
+
+      div.box1 > :nth-child(2n) {
+        color: forestgreen;
+      }
+
+      div.box1 > :nth-of-type(2n) {
+        color: darkblue;
+      }
+
+      div.box2 em,
+      div.box2 span {
+        display: inline-block;
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      body > :first-child {
+        background-color: gainsboro;
+      }
+
+      /*body태그의 직계자손일 경우 last-child는 적용이 안됨*/
+      body > :last-child {
+        background-color: gainsboro;
+      }
+
+      div.box2 :nth-of-type(7) {
+        color: lawngreen;
+      }
+
+      div.box2 :only-of-type {
+        background-color: violet;
+      }
+
+      div.box2 :not(:first-child) {
+        font-weight: bold;
+      }
+
+      div.box2 :not(:last-child) {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <h1>hello world</h1>
+      <h2>hello world</h2>
+      <h3>hello world</h3>
+      <h1>hello world</h1>
+      <h2>hello world</h2>
+      <h3>hello world</h3>
+      <h1>hello world</h1>
+      <h2>hello world</h2>
+      <h3>hello world</h3>
+    </div>
+    <div class="box2">
+      <span>span</span>
+      <span>span</span>
+      <span>span</span>
+      <span>span</span>
+      <em>em</em>
+      <span>span</span>
+      <span>span</span>
+      <span>span</span>
+    </div>
+  </body>
+</html>

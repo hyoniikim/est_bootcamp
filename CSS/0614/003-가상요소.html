@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>003-가상요소</title>
+    <style>
+      p::before {
+        content: "1기 두부 여러분";
+        font-weight: bold;
+        color: plum;
+      }
+
+      p::after {
+        content: "환영합니다!";
+      }
+
+      /*
+      img, br, input태그는 닫는 태그가 없기 때문에 부모가 될 수 없음
+      -> 가상요소를 자식으로 넣어줄 수 없음
+      */
+
+      input::placeholder {
+        color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <strong>안녕하세요</strong>
+      <strong>안녕하세요</strong><br />
+      <strong>안녕하세요</strong>
+      <strong>안녕하세요</strong>
+      <strong>안녕하세요</strong>
+    </p>
+
+    <input type="text" placeholder="이름을 작성해주세요" />
+  </body>
+</html>
