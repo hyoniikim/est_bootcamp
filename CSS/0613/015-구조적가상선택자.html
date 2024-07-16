@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>015-구조적 가상 선택자</title>
+    <style>
+      li {
+        background-color: gainsboro;
+        margin-bottom: 20px;
+      }
+
+      /*li의 첫번째 요소*/
+      li:first-child {
+        color: red;
+      }
+
+      /*li의 짝수번째*/
+      li:nth-child(even) {
+        color: blue;
+      }
+
+      /*p태그의 3번째 요소*/
+      div p:nth-of-type(3) {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p class="t1">안녕</p>
+      <p class="t2">안녕</p>
+      <p class="t3">안녕</p>
+      <p class="t4">안녕</p>
+      <p class="t5">안녕</p>
+      <p class="t6">안녕</p>
+      <p class="t7">안녕</p>
+      <p class="t8">안녕</p>
+      <p class="t9">안녕</p>
+      <p class="t10">안녕</p>
+    </div>
+    <hr />
+    <ol>
+      <li>리스트</li>
+      <li>리스트</li>
+      <li>리스트</li>
+      <li>리스트</li>
+      <li>리스트</li>
+      <li>리스트</li>
+      <li>리스트</li>
+      <li>리스트</li>
+      <li>리스트</li>
+      <li>리스트</li>
+    </ol>
+  </body>
+</html>

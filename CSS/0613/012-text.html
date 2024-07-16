@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>012-text</title>
+    <style>
+      p {
+        background-color: powderblue;
+        width: 500px;
+
+        /*
+        word-break: 텍스트가 텍스트 박스의 끝에 도달했을 때 해당 텍스트의 단어를 어떻게 줄바꿈할지 지정
+        word-break: break-all -> 단어가 콘텐츠 박스의 끝 경계를 오버플로우가 시작되는 정확한 지점에서 단어를 나누어 줄바꿈처리
+        word-break: keep-all -> 단어의 중간을 나누어 줄바꿈하지 않음 / 단어의 끝에서만 줄바꿈 처리
+        */
+        word-break: break-all;
+        word-break: keep-all;
+
+        /* 여러 줄 말줄임 처리 */
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci magni,
+      quasi velit praesentium illo saepe? Pariatur corrupti nisi voluptates,
+      dignissimos ipsam iste accusantium hic optio consequuntur. Eos possimus
+      voluptatibus expedita. Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit. Asperiores sapiente inventore sed aliquid, quidem maxime nam
+      quibusdam harum iure quas unde ipsum, similique tenetur consectetur
+      eligendi vero. Nostrum, laudantium possimus? Lorem ipsum dolor sit, amet
+      consectetur adipisicing elit. Odio ipsam unde explicabo nisi ab dicta
+      inventore consequuntur cupiditate nihil eligendi. Pariatur, voluptas
+      debitis! Ipsam ut nesciunt doloremque? Corporis, mollitia delectus.
+    </p>
+  </body>
+</html>
