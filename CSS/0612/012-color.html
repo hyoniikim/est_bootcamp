@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>012_color</title>
+    <style>
+      .key {
+        color: seagreen;
+      }
+      .code {
+        /*흰색*/
+        /* color: #ffffff; */
+        /*검은색*/
+        color: #000000;
+      }
+
+      /*레드, 그린, 블루를 0부터 255까지의 정수값으로 나타냄 */
+      .rgb {
+        /* color: rgb(255, 0, 0);
+        color: rgb(0, 255, 0); */
+        color: rgb(0, 0, 255);
+      }
+
+      /*a는 투명도를 나타내어 0~1까지의 범위를 가지고 있음 */
+      .rgba {
+        color: rgba(0, 0, 255, 0.3);
+      }
+
+      /*transparent = 투명도 */
+      .trans {
+        color: transparent;
+      }
+
+      div {
+        color: aqua;
+      }
+
+      p {
+        border: 1px solid currentColor;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p class="key">안녕하세요</p>
+      <p class="code">감사합니다</p>
+      <p class="rgb">고맙습니다</p>
+      <p class="rgba">미안합니다</p>
+      <p class="trans">죄송합니다</p>
+    </div>
+  </body>
+</html>

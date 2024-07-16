@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>008_특정선택자</title>
+    <style>
+      [type="button"] {
+        border: 0;
+        cursor: pointer;
+      }
+      /* ^는 ~~로 시작한다는 의미 */
+      [class^="btn"] {
+        background-color: yellowgreen;
+        color: brown;
+      }
+
+      /* $는 ~~로 끝난다는 의미 */
+      [class$="btn"] {
+        background-color: blueviolet;
+        color: blanchedalmond;
+      }
+
+      /* *는 ~~의 단어를 포함한다는 의미 */
+      input[class*="btn"] {
+        font-weight: bold;
+      }
+
+      /*클래스에 btn이 포함되지 않은 모든 요소 선택*/
+      /* input:not([class*="btn"]) {
+        background-color: green;
+        color: white;
+      } */
+      a[href] {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" value="버튼" />
+    <input type="button" value="버튼" />
+    <input type="text" class="btn-first" value="버튼" />
+    <input type="text" class="second-btn" value="버튼" />
+  </body>
+</html>
