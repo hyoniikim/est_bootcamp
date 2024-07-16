@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>006-구체성의 원칙</title>
+    <style>
+      /* 우선 순위 계산 교안 확인*/
+      div #id1/*1+100=101점*/ {
+        color: green;
+      }
+      p /* 1점 */ {
+        color: black;
+      }
+      #id1 /* 100점 */ {
+        color: blue;
+      }
+      .class /* 10점*/ {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p id="id1" class="class">1. 이 글자는 어떤 색일까요?</p>
+      <p id="id2" class="class" style="color: red">
+        <!--1000점-->
+        2. 이 글자는 어떤 색일까요??
+      </p>
+    </div>
+  </body>
+</html>

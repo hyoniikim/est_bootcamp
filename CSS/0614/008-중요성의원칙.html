@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>008-중요성의 원칙</title>
+    <style>
+      .container {
+        width: 200px;
+        height: 200px;
+        background-color: plum;
+        color: blue;
+      }
+      /*  !important는 사용하지 않는 것이 좋다 */
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: skyblue;
+        color: purple !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      container
+      <div class="item">item</div>
+    </div>
+  </body>
+</html>
