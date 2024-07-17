@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <script>
+      //변수는 포스트잇
+      //window.prompt("이름을 입력하세요");
+      //console.log("기묘원님 안녕하세요?");
+
+      //변수 선언
+      //변수 키워드 - var, let, const 사용
+      var a;
+      let b = 10; //선언 + 할당 (초기화)
+      const name = "weniv"; //const는 변경할 수 없는 변수(재할당x)
+
+      //변수 할당(재할당)
+      //변수 = 값;
+      a = 30;
+      b = 20;
+      //const로 선언한 변수는 재할당이 불가
+      //name = "hello"; //TypeError : Assignment to constant variable.
+
+      //변수 참조
+      console.log(a);
+      console.log(b);
+      console.log(name); //ReferenceError: c is not defined
+    </script>
+  </body>
+</html>
