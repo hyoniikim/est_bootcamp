@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>001-flex</title>
+    <style>
+      ul {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 10px;
+      }
+
+      li {
+        width: 50px;
+        height: 50px;
+        background-color: plum;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      <li style="order: 5"><a href="">1</a></li>
+      <li style="order: 2"><a href="">2</a></li>
+      <!-- order를 적용하지 않은 것들 다음으로 order적용이 옴 -->
+      <li style="order: 1"><a href="">3</a></li>
+      <li style="order: 6"><a href="">4</a></li>
+      <li style="order: 13"><a href="">5</a></li>
+    </ul>
+
+    <nav>
+      <ul>
+        <li style="margin-right: auto"><a href="">HOME</a></li>
+        <li><a href="">PEOPLE</a></li>
+        <li><a href="">CONTACT</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
