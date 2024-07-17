@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>001-호이스팅</title>
+  </head>
+  <body>
+    <script>
+      var a; // 변수 선언문 먼저 실행
+      console.log(a); // (선언문과 할당문을 동시에 쓰더라도) 선언만 O, 할당 X
+      a = 10; // a = undefined
+
+      //console.log(b);
+      //let b = 20;
+      b = 20; // 할당문
+
+      console.log(c);
+    </script>
+  </body>
+</html>

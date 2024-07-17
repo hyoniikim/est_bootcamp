@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>005-문자열</title>
+  </head>
+  <body>
+    <script>
+      // 문자열
+      // 작음따옴표, 큰따옴표, 백틱으로 감싸진 텍스트
+      let str1 = "I'm hyonii";
+      let str2 = 'hello"\world';
+      let str3 = `hello \'
+      world`; // 백틱은 줄바꿈이 가능
+
+      console.log(str1);
+      console.log(str2);
+      console.log(str3);
+
+      console.log(typeof str1); // string
+      console.log(typeof str2); // string
+      console.log(typeof str3); // string
+
+      // 10 + 20 = 30
+      const a = 10;
+      const b = 20;
+
+      console.log(a + " + " + b + " = " + (a + b));
+      console.log(`${a} + ${b} = ${a + b}`);
+      console.log(`제 이름은 ${"기묘원"}입니다`);
+
+      // ----------문자열----------
+      let greeting = "Hello world";
+      console.log(greeting[0]); // H -> 0번째 요소
+      console.log(greeting[5]); // 빈문자열 -> 공백도 가능
+      console.log(greeting[12]); // undefined -> 숫자를 넘어가도 가능 (undefined)
+      console.log(greeting[-1]); // undefined -> 음수는 undefined로 반환
+      console.log(greeting.at(-1)); // d -> 음수 반환값을 원한다면 at(음수)
+
+      console.log("문자열의 길이: ", greeting.length); // 문자열의 길이: 11 -> 문자열길이를 반환
+      console.log(greeting[greeting.length - 1]); // d -> 0~10까지 있기 때문에 -1
+
+      greeting[5] = "k"; // 원시타입이기 때문에 바뀌지 않음
+
+      let greeting2 = "안녕하세요";
+      let company = "위니브";
+
+      console.log(greeting2 + company); // 안녕하세요위니브
+      console.log("안녕하세요위니브" === greeting2 + company); // true
+      console.log("안녕하세요위니브" === greeting2, company); //false -> ,는 띄어쓰기 적용
+      console.log("a+b=" + a + b); // "a+b=10" -> a+b=1020
+      console.log("a+b=" + (a + b)); // a+b=30 -> 소괄호 활용 a+b=30
+    </script>
+  </body>
+</html>
