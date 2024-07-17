@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습_animation</title>
+    <style>
+      @keyframes move-watch {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .cont {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        background-color: royalblue;
+        border-radius: 30%;
+      }
+      .cont div {
+        position: absolute;
+        top: 200px;
+        left: 200px;
+        width: 10px;
+        height: 150px;
+        transform-origin: center top;
+      }
+      .sec {
+        background-color: red;
+        animation: move-watch 60s infinite steps(60); /*steps() -> 뚝뚝 끊기는 현상*/
+      }
+      .min {
+        background-color: green;
+        animation: move-watch 120s infinite linear;
+      }
+      .hour {
+        background-color: black;
+        animation: move-watch 240s infinite linear;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="cont">
+      <div class="sec"></div>
+      <div class="min"></div>
+      <div class="hour"></div>
+    </article>
+  </body>
+</html>
